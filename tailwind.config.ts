@@ -12,7 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        platform: ["var(--font-platform)"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 } satisfies Config;
